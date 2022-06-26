@@ -23,5 +23,11 @@
   "personsTotal": "Total persons: {total}",
   "russian": "Russian",
   "signIn": "Sign in",
-  "tryAgain": "Try again"
+  "tryAgain": "Try again",
+  "characters": "Characters",
+  "settings": "Settings",
+  "rick": "Rick Sanchez",
+  "create": "Create",
+  "checkNicknameAndPassword": "Entered wrong nickname or password",
+  "noAccount" : "Don't have an account yet?"
 }

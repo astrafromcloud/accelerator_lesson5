@@ -5,6 +5,7 @@ import '../../../constants/app_colors.dart';
 import '../../../constants/app_styles.dart';
 import '../../../database/characters_database.dart';
 import '../../../database/characters_model.dart';
+import '../../../generated/l10n.dart';
 
 class CharactersListView extends StatelessWidget {
   const CharactersListView({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class CharactersListView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(item.life.toUpperCase(), style: AppStyles.s10w500.copyWith(color: item.life == 'Живой' ? AppColors.green : AppColors.red, letterSpacing: 1.5),),
+                  Text(item.life.toUpperCase(), style: AppStyles.s10w500.copyWith(color: item.life == S.of(context).alive ? AppColors.green : AppColors.red, letterSpacing: 1.5),),
                   Text(item.name, style: AppStyles.s14w500,),
                   Text('${item.race}, ${item.gender}', style: AppStyles.s12w400.copyWith(color: AppColors.grey),),
                 ],

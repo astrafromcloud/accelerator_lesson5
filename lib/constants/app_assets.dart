@@ -7,8 +7,14 @@ class _Images {
     const _Images();
 
     final String noAvatar = 'assets/images/bitmap/no_avatar.png';
+    final String logo = 'assets/images/bitmap/logo.png';
 }
 
 class _Svg {
   const _Svg();
+
+  final String account = 'assets/images/svg/account.svg';
+  final String password = 'assets/images/svg/password.svg';
+  final String alien = 'assets/images/svg/alien.svg';
+  final String settings = 'assets/images/svg/settings.svg';
 }

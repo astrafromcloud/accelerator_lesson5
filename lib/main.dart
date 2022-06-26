@@ -1,4 +1,6 @@
 import 'package:accelerator_lesson5/screen/characters/characters_screen.dart';
+import 'package:accelerator_lesson5/screen/login/login_screen.dart';
+import 'package:accelerator_lesson5/screen/test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,7 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SafeArea(child: CharactersScreen()),
+      // home: Testing(),
+      home: const LoginScreen(),
+      // home: const SafeArea(child: CharactersScreen()),
       localizationsDelegates: const [
         S.delegate,
       ],

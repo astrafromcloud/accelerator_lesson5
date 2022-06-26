@@ -21,28 +21,51 @@ class CharactersAppBarState extends State<CharactersAppBar> {
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
       child: Column(
         children: [
-          Container(
-            height: 48,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-                color: AppColors.darkBlue),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 0, 8),
-              child: TextFormField(
-                textAlignVertical: TextAlignVertical.center,
-                decoration: InputDecoration(
-                  isCollapsed: true,
-                  border: InputBorder.none,
-                  icon: const Icon(
-                    Icons.search_sharp,
-                    color: AppColors.darkBlue,
+          Center(
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8),
+              height: 48,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: AppColors.white),
+              child: Row(
+                children: [
+                  const Expanded(
+                    child: Icon(Icons.search_sharp),
+                    flex: 4,
                   ),
-                  label: Text(S.of(context).findPerson),
-                  floatingLabelBehavior: FloatingLabelBehavior.never,
-                  suffixIcon: const Icon(Icons.filter_list_alt),
-                  suffixIconColor: AppColors.darkBlue,
-                ),
-                ),
+                  Expanded(
+                    child: TextFormField(
+                      textAlignVertical: TextAlignVertical.center,
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        labelText: S.of(context).findPerson,
+                        labelStyle: const TextStyle(color: AppColors.bottomBarUnselected),
+                        floatingLabelBehavior: FloatingLabelBehavior.never,
+                        isCollapsed: true,),
+                    ),
+                    flex: 24,
+                  ),
+                  const Expanded(
+                    child: Padding(
+                        padding: EdgeInsets.symmetric(vertical: 12),
+                        child: VerticalDivider(
+                          thickness: 2,
+                          color: AppColors.bottomBarUnselected,
+                        )),
+                    flex: 1,
+                  ),
+                  Expanded(
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        child: const Icon(Icons.filter_list_alt),
+                      ),
+                    ),
+                    flex: 3,
+                  )
+                ],
+              ),
             ),
           ),
           Row(

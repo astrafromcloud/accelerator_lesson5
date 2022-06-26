@@ -23,5 +23,11 @@
   "personsTotal": "Всего персонажей: {total}",
   "russian": "Русский",
   "signIn": "Вход",
-  "tryAgain": "Попробуйте снова"
+  "tryAgain": "Попробуйте снова",
+  "characters": "Персонажи",
+  "settings": "Настройки",
+  "rick": "Рик Санчез",
+  "create": "Создать",
+  "checkNicknameAndPassword": "Введен неверные логин или пароль",
+  "noAccount" : "У вас еще нет аккаунта?"
 }

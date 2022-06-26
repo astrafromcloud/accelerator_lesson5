@@ -26,9 +26,13 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alive": MessageLookupByLibrary.simpleMessage("Живой"),
         "auth": MessageLookupByLibrary.simpleMessage("Авторизация"),
+        "characters": MessageLookupByLibrary.simpleMessage("Персонажи"),
+        "checkNicknameAndPassword": MessageLookupByLibrary.simpleMessage(
+            "Введен неверные логин или пароль"),
         "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
         "counterValue":
             MessageLookupByLibrary.simpleMessage("Значение счетчика"),
+        "create": MessageLookupByLibrary.simpleMessage("Создать"),
         "dead": MessageLookupByLibrary.simpleMessage("Мертвый"),
         "english": MessageLookupByLibrary.simpleMessage("Английский"),
         "findPerson": MessageLookupByLibrary.simpleMessage("Найти персонажа"),
@@ -44,10 +48,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Введите логин и пароль"),
         "language": MessageLookupByLibrary.simpleMessage("Язык"),
         "login": MessageLookupByLibrary.simpleMessage("Логин"),
+        "noAccount":
+            MessageLookupByLibrary.simpleMessage("У вас еще нет аккаунта?"),
         "noData": MessageLookupByLibrary.simpleMessage("Нет данных"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "personsTotal": m0,
+        "rick": MessageLookupByLibrary.simpleMessage("Рик Санчез"),
         "russian": MessageLookupByLibrary.simpleMessage("Русский"),
+        "settings": MessageLookupByLibrary.simpleMessage("Настройки"),
         "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Попробуйте снова")
       };

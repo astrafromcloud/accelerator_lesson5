@@ -10,6 +10,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   intl: ^0.17.0
+  flutter_svg: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -21,6 +22,11 @@ flutter:
   assets:
 #    - assets/images/svg
     - assets/images/bitmap/no_avatar.png
+    - assets/images/bitmap/logo.png
+    - assets/images/svg/account.svg
+    - assets/images/svg/password.svg
+    - assets/images/svg/alien.svg
+    - assets/images/svg/settings.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
