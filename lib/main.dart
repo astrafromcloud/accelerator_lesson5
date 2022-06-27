@@ -1,15 +1,8 @@
-import 'package:accelerator_lesson5/screen/characters/characters_screen.dart';
-import 'package:accelerator_lesson5/screen/login/login_screen.dart';
-import 'package:accelerator_lesson5/screen/test.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-import 'generated/l10n.dart';
+import 'myapp.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.white,
-  ));
   runApp(const MyApp());
 }
 
@@ -18,16 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // home: Testing(),
-      home: const LoginScreen(),
-      // home: const SafeArea(child: CharactersScreen()),
-      localizationsDelegates: const [
-        S.delegate,
-      ],
-      locale: const Locale('ru_RU'),
-      supportedLocales: S.delegate.supportedLocales,
-    );
+    return const MainApp();
   }
 }

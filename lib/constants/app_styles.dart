@@ -43,5 +43,10 @@ class AppStyles {
       fontWeight: FontWeight.w500,
       color: AppColors.mainText
   );
+  static const s20w700 = TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      color: AppColors.mainText
+  );
 
 }

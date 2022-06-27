@@ -23,6 +23,7 @@ flutter:
 #    - assets/images/svg
     - assets/images/bitmap/no_avatar.png
     - assets/images/bitmap/logo.png
+    - assets/images/bitmap/splash.png
     - assets/images/svg/account.svg
     - assets/images/svg/password.svg
     - assets/images/svg/alien.svg
